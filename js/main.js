@@ -941,7 +941,7 @@ if (additional_information){
       });
       additional_information[additional_num].classList.add('on');
     }
-}
+
 
 
     new daum.roughmap.Lander({
@@ -951,6 +951,6 @@ if (additional_information){
         "mapHeight" : "360"
     }).render();
 
-
+}
 
 

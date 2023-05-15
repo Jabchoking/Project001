@@ -974,7 +974,7 @@
 /* work 페이지 */
 
 .main {width: 100%; position: relative;}
-        .main h2 {font-size: 40px; font-weight: 700;}
+        .main h2 {font-size: 40px; font-weight: 700;padding-left: 100px;}
         .main h3 {font-size: 28px; font-weight: 500;}
         .main h4 {font-size: 16px;}
 
@@ -982,11 +982,13 @@
         .main .contentHead2 h2 {position: absolute; left: 0%; top: 10%;}
         .main .contentHead5 h2 {position: absolute; left: 11%; top: 10%;}
 
-        .main .boardTotal {font-size: 18px; left: 7%; top: 25%;}
+        .main .boardTotal {font-size: 18px; left: 7%; top: 25%;padding-left: 100px;}
         .main .boardTotal em {color: blue;}
 
         .main .contentUtil {display: flex;
-                 left: 54%; top: 12%;}
+                 left: 54%; top: 12%;
+                 flex-direction:row-reverse;
+                padding-right: 100px;}
         .main .contentUtil li {margin: 15px;}
         .main .contentUtil li::before {content: ""; width: 1px; height: 15px; border-left: 1px solid whitesmoke;
         margin-right: 15px;}
