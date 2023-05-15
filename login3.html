@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="inner">
+        <div class="Medical_membership_certification">
+            <h2>진료회원 인증</h2>
+            <ul>
+                <li class="on" data-id="01">본인명의 휴대전화 인증</li>
+                <li  data-id="02">아이핀(i-pin)인증</li>
+                <li data-id="03">주민등록번호 확인</li>
+            </ul>
+        </div>
+            <table class="Identification_check on"  id="01">
+           <colgroup>
+            <col class="w1">
+            <col class="w2">
+           </colgroup>
+           <tbody>
+            <tr>
+                <td>휴대전화 인증</td>
+                <td><button>본인인증하기</button></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td> <input type="text" name="name" class="username" ><p>인증 후 자동으로 이름이 입력됩니다.</p></td>
+            </tr>
+            <tr>
+                <td>인증방법 선택</td>
+                <td> 
+                    <input type="radio" id="Resident_registration_number" name="Personal_authentication_method" class="Unique_number"><label for="Authentication_method" name="Personal_authentication_method">주민등록번호</label>
+                    <input type="radio" id="Patient number" name="Personal_authentication_method" class="Unique_number"><label for="Patient number" name="Personal_authentication_method">진찰권번호(환자번호)</label>
+                </td>
+            </tr>
+            <tr class="registration_number_tr">
+                <td>주민등록 번호</td>
+                <td>
+                    <input type="text" class="registration_number"> - <input type="text" class="registration_number"> <input type="checkbox" id="View_hidden_information"><label for="View_hidden_information">숨김정보 보기</label>
+                    <p>※ 병원 환자정보 확인을 위해 정확히 입력해 주십시오.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="consultation_number">진찰권 번호</td>
+                <td>
+                    <input type="text" class="registration_number"> - <input type="text" class="registration_number"> <input type="checkbox" id="View_hidden_information"><label for="View_hidden_information">숨김정보 보기</label>
+                    <p>※ 병원 환자정보 확인을 위해 정확히 입력해 주십시오.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>휴대폰번호</td>
+                <td><input type="text"  name="phone_Number" class="phone_number_authentication" id="phone_number_authentication1"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication2"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication3"></td>
+            </tr>
+           </tbody>
+            </table>
+            <table class="Identification_check"  id="02">
+                <colgroup>
+                 <col class="w1">
+                 <col class="w2">
+                </colgroup>
+                <tbody>
+                 <tr>
+                     <td>아이핀 인증</td>
+                     <td><button>본인인증하기</button></td>
+                 </tr>
+                 <tr>
+                     <td>이름</td>
+                     <td> <input type="text" name="name" class="username" ><p>인증 후 자동으로 이름이 입력됩니다.</p></td>
+                 </tr>
+                 <tr>
+                     <td>인증방법 선택</td>
+                     <td> 
+                         <input type="radio" id="Resident_registration_number" name="Personal_authentication_method" class="Unique_number"><label for="Authentication_method" name="Personal_authentication_method">주민등록번호</label>
+                         <input type="radio" id="Patient number" name="Personal_authentication_method" class="Unique_number"><label for="Patient number" name="Personal_authentication_method">진찰권번호(환자번호)</label>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>주민등록 번호</td>
+                     <td>
+                         <input type="text" class="registration_number"> - <input type="text" class="registration_number"> <input type="checkbox" id="View_hidden_information"><label for="View_hidden_information">숨김정보 보기</label>
+                         <p>※ 병원 환자정보 확인을 위해 정확히 입력해 주십시오.</p>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>휴대폰번호</td>
+                     <td><input type="text"  name="phone_Number" class="phone_number_authentication" id="phone_number_authentication1"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication2"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication3"></td>
+                 </tr>
+                </tbody>
+                 </table>
+                 <table class="Identification_check"  id="03">
+                    <colgroup>
+                     <col class="w1">
+                     <col class="w2">
+                    </colgroup>
+                    <tbody>
+                     <tr>
+                         <td>이름</td>
+                         <td> <input type="text" name="name" class="username" ><p>인증 후 자동으로 이름이 입력됩니다.</p></td>
+                     </tr>
+                     <tr>
+                         <td>인증방법 선택</td>
+                         <td> 
+                             <input type="radio" id="Resident_registration_number" name="Personal_authentication_method" class="Unique_number"><label for="Authentication_method" name="Personal_authentication_method">휴대전화번호</label>
+                             <input type="radio" id="Patient number" name="Personal_authentication_method" class="Unique_number"><label for="Patient number" name="Personal_authentication_method">E-mail</label>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>휴대폰번호</td>
+                         <td><input type="text"  name="phone_Number" class="phone_number_authentication" id="phone_number_authentication1"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication2"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication3"></td>
+                     </tr>
+                     <tr>
+                        <td>인증번호</td>
+                        <td><input type="text" name="phone_Number_Certified" class="phone_Number_Input__Certified"> <button>인증</button></td>
+                     </tr>
+                    </tbody>
+                     </table>
+        <p>
+            <button class="Authenticating">인증하기</button>
+        </p>
+        <div class="second_stage_of_membership_registration">
+        <h2>회원가입</h2>
+        <ul class="subscription2">
+            <li>step01<br>약관동의</li>
+            <li>step02<br>개인정보/본인인증</li>
+            <li>step03<br>가입완료</li>
+        </ul>
+        <strong><em>*</em>표기항목은 필수 입력항목입니다.</strong>
+    </div>
+        <table class="join_membership">
+           <colgroup>
+            <col class="w1">
+            <col class="w2">
+           </colgroup>
+           <tbody>
+             <tr>
+                <td><span>*</span>아이디</td>
+                <td><input type="text" name="Registration_ID" class="Registration_ID"> <button class="ID_Duplicate_check">중복확인</button><p>한글, 영문 + 숫자 혼용 6~12자</p> </td>
+             </tr>
+             <tr>
+                <td><span>*</span>비밀번호</td>
+                <td><input type="password"name="Registration_Password" ><p>영문, 숫자, 특수문자(!@#$%^&*(),.;) 3가지 이상 조합으로 9~16자 이여야 합니다.</p></td>
+             </tr>
+             <tr>
+                <td><span>*</span>비밀번호 확인</td>
+                <td><input type="password" name="Registration_Repassword"></td>
+             </tr>
+             <tr>
+                <td><span>*</span>이름</td>
+                <td><input type="text" name="name" class="username" readonly></td>
+             </tr>
+             <tr>
+                <td><span>*</span>이메일</td>
+                <td><input type="text" name="E-mail"> @ <select name="E-mail_address" id="E-mail_address">
+                    <option value="선택">선택</option>
+                    <option value="naver">naver.com</option>
+                    <option value="daum">daum.net</option>
+                    <option value="nate">nate.net</option>
+                    <option value="google">google.co.kr</option>
+                </select> <input type="text" name="E-mail" id="E_mail">
+                <input type="checkbox" id="Naver_ID">
+                <label for="Naver_ID" class="Naver_ID">네이버 ID사용</label>
+                <button class="naver_button">네이버 인증</button>
+             </td>
+             </tr>
+             <tr>
+                <td><span>*</span>주소</td>
+                <td><input type="text" readonly> <button class="Find_Address_button">주소찾기</button>
+                   <div> <input type="text" name="the_rest_of_the_address" class="the_rest_of_the_address" ><input type="text" class="the_rest_of_the_address" name="the_rest_of_the_address"></div>
+                </td>
+             </tr>
+             <tr>
+                <td><span>*</span>휴대전화</td>
+                <td><input type="text"  name="phone_Number" class="phone_Number_Input" id="phone_Number_Input1" readonly> - <input type="text" name="phone_Number" class="phone_Number_Input" id="phone_Number_Input2" readonly> - <input type="text" name="phone_Number" class="phone_Number_Input" id="phone_Number_Input3" readonly>
+                <p>홈페이지 회원 SMS 정보 수신</p></td>
+             </tr>
+             <tr>
+                <td>추가연락처</td>
+                <td><input type="text" placeholder="02" name="Additional_Contacts" class="Additional_Contacts" > - <input type="text" name="Additional_Contacts"  class="Additional_Contacts"> - <input type="text"  name="Additional_Contacts"  class="Additional_Contacts"></td>
+             </tr>
+             <tr>
+                <td><span>*</span>생년월일</td>
+                <td><select name="year" id="date_of_birth">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option></select>
+                    <select name="month" id="date_of_birth">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                    </select>
+                    <select name="day" id="date_of_birth">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                    </select> </td> </tr>
+            <tr>
+                <td><span>*</span>국적</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><span>*</span>성별</td>
+                <td>
+                <input type="radio" name="gender" id="male" class="gender"><label for="male" name="gender" class="sexual">남자</label>
+                <input type="radio" name="gender" id="female"  class="gender"><label for="female" name="gender"  class="sexual">여자</label>
+                </td>
+            </tr>
+            <tr>
+                <td><span>*</span>자동방지문자</td>
+                <td><div class="Auto_preventive_characters"><p>7 7 6 0 6 7 2 8</p></div>
+                    <div class="Auto_preventive_text"><p>자동가입을 방지하기 위해 보안절차를 거치고 있습니다. 왼쪽 이미지를 보이는 대로 입력해주세요.</p>
+                    <input type="text" name="an_auto_protective_character"></div>
+                </td>
+            </tr>
+            <td><span>*</span>개인정보<br>보관기한 설정</td>
+            <td>
+                <input type="radio" id="information_retention_deadline" name="information_retention_deadline"><label for="information_retention_deadline" name="information_retention_deadline" class="Keeping_personal_information">2년</label>
+                <input type="radio" id="information_retention_deadline" name="information_retention_deadline"><label for="information_retention_deadline" name="information_retention_deadline"  class="Keeping_personal_information">3년</label>
+                <input type="radio" id="information_retention_deadline" name="information_retention_deadline"><label for="information_retention_deadline" name="information_retention_deadline" class="Keeping_personal_information">5년</label>
+                <p>회원님의 개인정보 보관 기한을 설정해주세요. 최대 5년까지 가능합니다.</p>
+            </td>
+           </tbody>
+        </table>
+        <button class="Sign_up_button">가입하기</button>
+    </div>
+    <script src="js/main.js"></script> 
+</body>
+</html>

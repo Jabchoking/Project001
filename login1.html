@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+        <div class="Subscription_button_image">
+            <ul class="Subscription_image">
+                <li class="login_Subscription_image"><i class='bx bx-user-plus'></i> 로그인</li>
+                <li class="nonlogin_Subscription_image"><i class='bx bx-user-x'></i>비 회원 로그인</li>
+            </ul>
+        </div>
+        <login id="LogIn">
+            <div class="leftLogIn">
+                <div class="memberLogin">
+                    <i class='bx bx-user'></i>
+                    <h2>로그인</h2>
+                </div>
+                <p>서울대학교병원 홈페이지 회원서비스는<br>로그인 후 이용하실 수 있습니다.</p>
+                <input type="text" name="userid" placeholder="아이디/진찰권(환자번호)" class="login_id">
+                <input type="password" name="userpassword" class="login_password" placeholder="비밀번호">
+                <button class="login">로그인</button>
+                <a href="#">아이디/비밀번호찾기</a>
+                <a href="login2.html">회원가입</a>
+                <button class="naverLogIn"><img src="./images/Project/navericon.png" alt="">네이버 아이디로 로그인</button>
+                <div class="ReservationAndcall">
+                    <p>대표전화, 진료예약</p>
+                    <strong>1588-5700</strong>
+                </div>
+            </div>
+            <div class="rightLogIn">
+                <div class="non-memberLogin">
+                    <i class='bx bx-lock-alt'></i>
+                    <h2>비회원 로그인</h2>
+                </div>
+                <p>비회원서비스는 개인정보 수집동의 이후 <br>이용 하실수 있습니다.</p>
+                <input type="text" id="name" name="name" placeholder="이름" class="name">
+                <input type="text" id="edical_examination_ticket" name="edical_examination_ticket" placeholder="진찰권 번호"
+                    class="name">
+                <input type="text" id="callNumber" name="callNumber" placeholder="휴대전화번호(010-0000-0000)"
+                    class="callNumber">
+                <button class="Approval">승인</button>
+                <input type="text" id="Authentication_Number" name="Authentication_Number" placeholder="승인번호"
+                    class="Authentication_Number">
+                <textarea cols="100" rows="20" id="Collection_Of_Personal_Information" class="textarea">※ 개인정보 수집 및 이용에 대한 안내
+        1. 수집/이용 목적: 비회원 환자의 진료예약 신청, 확인 및 취소에 대한 이용 기록 보관.
+        2. 수집하는 항목: 이름, 환자등록번호(진찰권 번호), 휴대전화번호
+        3. 개인정보의 보유 및 이용기간 : 2년
+        4. 동의를 거부할 권리가 있으며, 대표전화(전화: 1588-5700)로 이용하실 수 있습니다.</textarea>
+                <div class="personal_information">
+                    <input type="checkbox" id="Consent_To_use">
+                    <label for="Consent_To_use" class="Consent_personal_information">환자 및 법적대리인만 서비스 이용이 가능하며
+                        개인정보 이용에 동의합니다.</label>
+                </div>
+                <button class="nonlogin">비회원 로그인</button>
+                <a href="#" class="forgot_The_Number">진찰권 번호(환자번호)를 잊으셨나요?</a>
+            </div>
+        </login>
+    </div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
